@@ -14,5 +14,11 @@ export class AppComponent {
 
   handleClickEvent() {
     console.log("Function called");
+    this.anotherHandleClickEvent();
+    console.log("My application name is", this.title);
+  }
+
+  anotherHandleClickEvent() {
+    console.log("Another function called");
   }
 }
