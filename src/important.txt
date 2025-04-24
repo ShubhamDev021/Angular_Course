@@ -33,4 +33,8 @@ Each component have 4 files:
 (c). component_name.component.css
 (d). component_name.component.spec.ts
 
+How to use a component?
+We can use the selector name in the parent component(i.e. app component) to use that component such as <app-login></app-login>
+But before using this component, we have to import this component in parent component(i.e. app component) first
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
