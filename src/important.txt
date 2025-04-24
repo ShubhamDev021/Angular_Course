@@ -26,4 +26,11 @@ Ex: header, footer, side-bar, main-content etc
 How to make a component?
 By using command: ng generate component component_name
 
+Files of components
+Each component have 4 files:
+(a). component_name.component.html
+(b). component_name.component.ts
+(c). component_name.component.css
+(d). component_name.component.spec.ts
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
