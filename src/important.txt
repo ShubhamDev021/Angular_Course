@@ -23,4 +23,7 @@ To maintan reusability of code, we use different components in angular applicati
 We can add a component inside another component
 Ex: header, footer, side-bar, main-content etc
 
+How to make a component?
+By using command: ng generate component component_name
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
