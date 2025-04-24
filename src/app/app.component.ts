@@ -11,4 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 })
 export class AppComponent {
   title = 'angular_course';
+
+  handleClickEvent() {
+    console.log("Function called");
+  }
 }
