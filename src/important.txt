@@ -6,3 +6,13 @@ When we try to show ts file data in html file, we use string Interpolation
 Syntax: {{ property }}
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is Angular CLI?
+Angular CLI is a tools that helps developers create, build, test and deploy angular applications
+
+How to check if Angular CLI is installed?
+By using command: ng version
+
+How to find all commands?
+By using command: ng help
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
