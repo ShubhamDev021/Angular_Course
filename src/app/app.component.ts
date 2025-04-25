@@ -104,4 +104,27 @@ export class AppComponent {
   //------------------------
   // Events code ends
   //------------------------
+
+
+  //-------------------------------
+  // Get and Set value code starts
+  //-------------------------------
+  firstname:string = "";
+  displayFirstName:string = "";
+
+  inputFirstName(event:Event) {
+    this.firstname = (event.target as HTMLInputElement).value;
+  }
+
+  getValue() {
+    this.displayFirstName = this.firstname;
+  }
+
+  setValue() {
+    this.firstname = 'ayush';
+    this.displayFirstName = this.firstname;
+  }
+  //-------------------------------
+  // Get and Set value code ends
+  //-------------------------------
 }

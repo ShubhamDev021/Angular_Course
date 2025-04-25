@@ -20,3 +20,11 @@
 
 <h2>Input, focus, blur event</h2>
 <input type="text" name="name" placeholder="Enter your name" (input)="handleInputEvent($event)" (focus)="handleInputEvent($event)" (blur)="handleInputEvent($event)"> -->
+
+<h2>Get and Set input field value</h2>
+
+<h3>First name: {{ displayFirstName }}</h3>
+<input type="text" name="firstname" id="firstname" placeholder="Enter the first name" (input)="inputFirstName($event)" value="{{firstname}}">
+<br><br>
+<button (click)="getValue()">Get Value(first name)</button>
+<button (click)="setValue()">Set Value(first name)</button>
