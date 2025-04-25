@@ -64,4 +64,10 @@ Difference between property and variable
         }
     Here, variable is brother_name
 
+Define multiple type to property
+We can assign different type to a property using pipe(|) operator
+Syntax: property:type1|type2 = value;
+Ex: name_or_age:string|number = "Akansha";
+    this.name_or_age = 30;
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 export class AppComponent {
   title = 'angular_course';
   name:string = 'Shubham';
+  name_or_age:string|number = "Akansha";
 
   handleClickEvent() {
     var brother_name = 'Ayush';
@@ -22,6 +23,10 @@ export class AppComponent {
     console.log("My name is", this.name);
     //this.name = 20;   //this line will error that Type 'number' is not assignable to type 'string'
     console.log("My brother's name is", brother_name);
+
+    console.log("My sister's name is", this.name_or_age);
+    this.name_or_age = 30;
+    console.log("My sister's age is", this.name_or_age);
   }
 
   anotherHandleClickEvent() {
