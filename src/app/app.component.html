@@ -84,3 +84,25 @@ Style Option - component.ts style
     <div style="background-color: green; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
   }
 </div> -->
+
+<h1>Else-If ladder | Control flow statement</h1>
+
+<div>
+  <button (click)="changeColor('red')">Red Color</button>
+  <button (click)="changeColor('blue')">Blue Color</button>
+  <button (click)="changeColor('green')">Green Color</button>
+  <button (click)="changeColor('black')">Other</button>
+  @if(color == 'red') {
+    <div style="background-color: red; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  }
+  @else if(color == 'blue') {
+    <div style="background-color: blue; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  }
+  @else if(color == 'green') {
+    <div style="background-color: green; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  }
+  @else {
+    <div style="background-color: black; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  }
+  
+</div>

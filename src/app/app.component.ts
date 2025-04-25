@@ -167,4 +167,17 @@ export class AppComponent {
   //--------------------------------------
   // Control flow - if else - code ends
   //--------------------------------------
+
+
+  //--------------------------------------
+  // Control flow - else if ladder - code ends
+  //--------------------------------------
+  color:string = 'blue';
+
+  changeColor(val:string) {
+    this.color = val;
+  }
+  //--------------------------------------
+  // Control flow - else if ladder - code ends
+  //--------------------------------------
 }
