@@ -94,6 +94,13 @@ export class AppComponent {
     console.log("button name", (event.target as HTMLButtonElement).innerText);
   }
 
+  handleInputEvent(event:Event) {
+    console.log("event details", event);
+    console.log("event type", event.type);
+    console.log("input element name", (event.target as HTMLInputElement).name);
+    console.log("input element value", (event.target as HTMLInputElement).value);
+  }
+
   //------------------------
   // Events code ends
   //------------------------
