@@ -14,11 +14,14 @@ export class AppComponent {
   name:string = 'Shubham';
 
   handleClickEvent() {
+    var brother_name = 'Ayush';
+
     console.log("Function called");
     this.anotherHandleClickEvent();
     console.log("My application name is", this.title);
     console.log("My name is", this.name);
     //this.name = 20;   //this line will error that Type 'number' is not assignable to type 'string'
+    console.log("My brother's name is", brother_name);
   }
 
   anotherHandleClickEvent() {

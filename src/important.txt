@@ -53,4 +53,15 @@ If we didn't define type of a property, then typescript is smart enough to judge
 Ex: name = 'Shubham';
     name = 30; here, error will occur as typescript is smart enough and has identified that type of property name is string and we are assigning numbver value to it
 
+Difference between property and variable
+(a). Property is defined in a class
+    Ex: name:string = 'Shubham';
+    Here, property is name
+(b). Variable is defined in a function in class
+    Ex: handleClickEvent() {
+            var brother_name = 'Ayush';
+            console.log("My brother's name is", brother_name);
+        }
+    Here, variable is brother_name
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
