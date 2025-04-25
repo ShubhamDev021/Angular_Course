@@ -49,4 +49,25 @@ export class AppComponent {
   sum(a:number, b:number) {
     console.log("Sum =", (a+b));
   }
+
+  //------------------------
+  // Counter App code starts
+  //------------------------
+  count = 0;
+
+  handleCounter(action:string) {
+    if (action == 'increment') {
+      this.count ++;
+    }
+    if (action == 'decrement') {
+      this.count --;
+    }
+    if (action == 'reset') {
+      this.count = 0;
+    }
+  }
+
+  //------------------------
+  // Counter App code ends
+  //------------------------
 }

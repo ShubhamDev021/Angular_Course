@@ -87,3 +87,11 @@ sum(a:number, b:number) {
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Make Counter App in angular
+
+Make buttons for increment, decrement and reset
+Take count property amd display on UI
+Make property for increment, decrement and reset
+Add style to buttons
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
