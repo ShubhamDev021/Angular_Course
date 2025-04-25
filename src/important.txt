@@ -70,4 +70,15 @@ Syntax: property:type1|type2 = value;
 Ex: name_or_age:string|number = "Akansha";
     this.name_or_age = 30;
 
+Define all the types to a property
+Syntax: property:any = value;
+Ex: other:any = "Avika";
+    this.other = 2;
+    this.other = true;
+    this.other = {
+      name: 'abc',
+      age: 15,
+      class: 'High School'
+    };
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

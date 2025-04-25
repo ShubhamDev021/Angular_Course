@@ -27,6 +27,18 @@ export class AppComponent {
     console.log("My sister's name is", this.name_or_age);
     this.name_or_age = 30;
     console.log("My sister's age is", this.name_or_age);
+
+    console.log("Value 1 is", this.other);
+    this.other = 2;
+    console.log("Value 2 is", this.other);
+    this.other = true;
+    console.log("Value 3 is", this.other);
+    this.other = {
+      name: 'abc',
+      age: 15,
+      class: 'High School'
+    };
+    console.log("Value 4 is", this.other);
   }
 
   anotherHandleClickEvent() {
