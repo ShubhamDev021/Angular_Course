@@ -110,7 +110,9 @@ export class AppComponent {
   // Get and Set value code starts
   //-------------------------------
   firstname:string = "";
+  lastname:string = "";
   displayFirstName:string = "";
+  displayLastName:string = "";
 
   inputFirstName(event:Event) {
     this.firstname = (event.target as HTMLInputElement).value;
@@ -123,6 +125,16 @@ export class AppComponent {
   setValue() {
     this.firstname = 'ayush';
     this.displayFirstName = this.firstname;
+  }
+
+  getValueNew(val:string) {
+    this.lastname = val;
+    this.displayLastName = this.lastname;
+  }
+
+  setValueNew() {
+    this.lastname = 'bhatnagar';
+    this.displayLastName = this.lastname;
   }
   //-------------------------------
   // Get and Set value code ends

@@ -24,7 +24,13 @@
 <h2>Get and Set input field value</h2>
 
 <h3>First name: {{ displayFirstName }}</h3>
+<h3>Last name: {{ displayLastName }}</h3>
 <input type="text" name="firstname" id="firstname" placeholder="Enter the first name" (input)="inputFirstName($event)" value="{{firstname}}">
+<br><br>
+<input type="text" name="lastname" id="lastname" placeholder="Enter the last name" value="{{lastname}}" #lastName>
 <br><br>
 <button (click)="getValue()">Get Value(first name)</button>
 <button (click)="setValue()">Set Value(first name)</button>
+<br><br>
+<button (click)="getValueNew(lastName.value)">Get Value(last name) using reference variable</button>
+<button (click)="setValueNew()">Set Value(last name) using reference variable</button>
