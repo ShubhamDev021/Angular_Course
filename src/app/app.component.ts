@@ -70,4 +70,31 @@ export class AppComponent {
   //------------------------
   // Counter App code ends
   //------------------------
+
+
+  //------------------------
+  // Events code starts
+  //------------------------
+
+  //click event
+  //Here if we make type of event as any then, less amount of problems got arised 
+  handleEvent(event:any) {
+    console.log("event details", event);
+    console.log("event type", event.type);
+    console.log("button element name", event.target.name);
+    console.log("button element class", event.target.className);
+    console.log("button name", event.target.innerText);
+  }
+  //but if we make type of event as MouseEvent then, we have to use the statement "as HTMLButtonElement" to access these properties
+  handleEventNew(event:MouseEvent) {
+    console.log("event details", event);
+    console.log("event type", event.type);
+    console.log("button element name", (event.target as HTMLButtonElement).name);
+    console.log("button element class", (event.target as HTMLButtonElement).className);
+    console.log("button name", (event.target as HTMLButtonElement).innerText);
+  }
+
+  //------------------------
+  // Events code ends
+  //------------------------
 }
