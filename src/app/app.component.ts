@@ -7,7 +7,8 @@ import { ProfileComponent } from './profile/profile.component';
   selector: 'app-root',
   imports: [RouterOutlet, LoginComponent, ProfileComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  styles: '.component-ts-span-class {font-size: 18px; color: white; background-color: blue;}'
 })
 export class AppComponent {
   title = 'angular_course';
