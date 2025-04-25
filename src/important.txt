@@ -39,3 +39,9 @@ We can use the selector name in the parent component(i.e. app component) to use 
 But before using this component, we have to import this component in parent component(i.e. app component) first
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Data type in angular
+
+Why do we need to define type?
+To maintain proper structure and throw error if unexpected values are being assigned to variable
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
