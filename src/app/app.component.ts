@@ -11,11 +11,14 @@ import { ProfileComponent } from './profile/profile.component';
 })
 export class AppComponent {
   title = 'angular_course';
+  name:string = 'Shubham';
 
   handleClickEvent() {
     console.log("Function called");
     this.anotherHandleClickEvent();
     console.log("My application name is", this.title);
+    console.log("My name is", this.name);
+    //this.name = 20;   //this line will error that Type 'number' is not assignable to type 'string'
   }
 
   anotherHandleClickEvent() {

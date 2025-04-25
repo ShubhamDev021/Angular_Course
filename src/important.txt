@@ -44,4 +44,8 @@ Data type in angular
 Why do we need to define type?
 To maintain proper structure and throw error if unexpected values are being assigned to variable
 
+Define type for property
+Type is defined by syntax: property:type = value;
+Ex: name:string = 'Shubham';
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
