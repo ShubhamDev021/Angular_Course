@@ -180,4 +180,19 @@ export class AppComponent {
   //--------------------------------------
   // Control flow - else if ladder - code ends
   //--------------------------------------
+
+  //--------------------------------------
+  // for loop code starts
+  //--------------------------------------
+  users = ["Shubham", "Ayush", "Akansha","Avika"]
+
+  students = [
+    {name: "shubham", age: 29, email: "shubham@gmail.com"},
+    {name: "ayush", age: 26, email: "ayush@gmail.com"},
+    {name: "akansha", age: 30, email: "akansha@gmail.com"},
+    {name: "avika", age: 2, email: "avika@gmail.com"}
+  ]
+  //--------------------------------------
+  // for loop code starts
+  //--------------------------------------
 }
