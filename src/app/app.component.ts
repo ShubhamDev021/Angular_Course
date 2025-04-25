@@ -140,4 +140,31 @@ export class AppComponent {
   //-------------------------------
   // Get and Set value code ends
   //-------------------------------
+
+
+  //--------------------------------------
+  // Control flow - if else - code starts
+  //--------------------------------------
+  displayDiv:boolean = false;
+
+  showDiv() {
+    this.displayDiv = true;
+  }
+  hideDiv() {
+    this.displayDiv = false;
+  }
+  toggleDiv() {
+    if(this.displayDiv) { this.displayDiv = false; }
+    else { this.displayDiv = true; }
+  }
+
+
+  displayRedDiv = true;
+  toggleDivs() {
+    if(this.displayRedDiv) { this.displayRedDiv = false; }
+    else { this.displayRedDiv = true; }
+  }
+  //--------------------------------------
+  // Control flow - if else - code ends
+  //--------------------------------------
 }

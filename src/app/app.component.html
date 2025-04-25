@@ -64,3 +64,23 @@ Style Option - component.ts style
 <br>
 <span class="component-ts-span-class">This line has style using component.ts style</span>
 <br><br> -->
+
+<h1>If-Else | Control flow statement</h1>
+
+<div style="height: 180px;">
+  <button (click)="showDiv()">Show Div</button>
+  <button (click)="hideDiv()">Hide Div</button>
+  <button (click)="toggleDiv()">Toggle Div</button>
+  @if(displayDiv) {
+    <div style="background-color: blue; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  }
+</div>
+
+<div>
+  <button style="margin-top: 30px;" (click)="toggleDivs()">{{ displayRedDiv ? 'Show green div' : 'Show red div' }}</button>
+  @if(displayRedDiv) {
+    <div style="background-color: red; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  } @else {
+    <div style="background-color: green; height: 150px; width: 150px; margin: auto; margin-top: 10px;"></div>
+  }
+</div>
