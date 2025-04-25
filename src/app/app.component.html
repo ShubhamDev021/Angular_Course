@@ -106,3 +106,47 @@ Style Option - component.ts style
   }
   
 </div> -->
+
+
+<h1>Switch case | Control flow statement</h1>
+
+<style>
+  .switch-btn {
+    width: 100px; 
+    height: 30px; 
+    border: 2px solid; 
+    border-radius: 25px; 
+    color: white;
+  }
+  .switch-btn:hover {
+    border-color: gray;
+  }
+  .switch-div {
+    height: 150px; 
+    width: 150px; 
+    margin: auto; 
+    margin-top: 10px;
+  }
+</style>
+
+<div>
+  <button class="switch-btn" (click)="changeColor('red')" style="background-color: red;">Red Color</button>
+  <button class="switch-btn" (click)="changeColor('blue')" style="background-color: blue;">Blue Color</button>
+  <button class="switch-btn" (click)="changeColor('green')" style="background-color: green;">Green Color</button>
+  <button class="switch-btn" (click)="changeColor('black')" style="background-color: black;">Other</button>
+
+  @switch(color) {
+    @case('red') {
+      <div class="switch-div" style="background-color: red;"></div>
+    }
+    @case('blue') {
+      <div class="switch-div" style="background-color: blue;"></div>
+    }
+    @case('green') {
+      <div class="switch-div" style="background-color: green;"></div>
+    }
+    @default {
+      <div class="switch-div" style="background-color: black;"></div>
+    }
+  }
+</div>
