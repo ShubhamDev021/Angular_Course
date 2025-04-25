@@ -13,6 +13,7 @@ export class AppComponent {
   title = 'angular_course';
   name:string = 'Shubham';
   name_or_age:string|number = "Akansha";
+  other:any = "Avika";
 
   handleClickEvent() {
     var brother_name = 'Ayush';
@@ -43,5 +44,9 @@ export class AppComponent {
 
   anotherHandleClickEvent() {
     console.log("Another function called");
+  }
+
+  sum(a:number, b:number) {
+    console.log("Sum =", (a+b));
   }
 }
