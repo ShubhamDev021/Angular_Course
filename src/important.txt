@@ -48,4 +48,9 @@ Define type for property
 Type is defined by syntax: property:type = value;
 Ex: name:string = 'Shubham';
 
+Can we create a property without defining its type?
+If we didn't define type of a property, then typescript is smart enough to judge the type
+Ex: name = 'Shubham';
+    name = 30; here, error will occur as typescript is smart enough and has identified that type of property name is string and we are assigning numbver value to it
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
