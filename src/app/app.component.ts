@@ -223,6 +223,19 @@ export class AppComponent {
   updatePropertyValue() {
     this.x = 30;
   }
+
+  data = signal<number | string>(10);
+  
+  updateSignal() {
+    console.log('data before:', this.data());
+    this.data.set(15);  //no error
+    console.log('data after:', this.data());
+    // this.data.set("hello");  // error: Argument of type 'string' is not assignable to parameter of type 'number'
+    //Therefore, we have to define string datatype also for signal value i.e. data = signal<number | string>(10);
+    this.data.set("hello");
+    console.log('data after2:', this.data());
+  }
+  
   //--------------------------------------
   // signal code starts
   //--------------------------------------
