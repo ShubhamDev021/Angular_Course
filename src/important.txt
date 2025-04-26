@@ -141,4 +141,7 @@ How to update value of a signal?
     this.data.update((val) => val + 1)
     If we have multiple datatypes in a signal then, this has limited use so, set() method is recommended
 
+Can we update value of computed signals?
+Yes, we can update its value not directly as seen earlier but we can update its value by creating dependency on other signal
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

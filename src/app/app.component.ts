@@ -227,6 +227,9 @@ export class AppComponent {
   data = signal<number | string>(10);
   data2: WritableSignal<number | string> = signal(10);
   data3:Signal<number> = computed(() => 200);
+  signal_x = signal(5);
+  signal_y = signal(6);
+  signal_z = computed(() => this.signal_x() + this.signal_y());
 
   updateSignal() {
     console.log('data before:', this.data());
@@ -246,6 +249,10 @@ export class AppComponent {
     console.log('data3 before:', this.data3());
     // this.data3.set(15); //error: Property 'set' does not exist on type 'Signal<number>' as this is a computable signal i.e. readonly signal
     console.log('data3 after:', this.data3());
+
+    console.log('signal_z before:', this.signal_z());
+    this.signal_x.set(this.signal_x() + 1);
+    console.log('signal_z after:', this.signal_z());
   }
   
   //--------------------------------------
