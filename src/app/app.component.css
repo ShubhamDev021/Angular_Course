@@ -41,3 +41,32 @@ h3 {
     background-color: red;
     color: white;
 }
+
+.signal-outer-wrapper {
+    display: inline;
+    margin-left: 42%;
+}
+.signal-btn {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    background: cornflowerblue;
+    font-size: 6vh;
+}
+.signal-display {
+    display: inline-block;
+    width: 100px;
+    background: gray;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 0px 20px;
+    font-weight: bold;
+    font-size: 6vh;
+}
+.signal-btn:hover {
+    border: 1px solid grey;
+    color: black;
+}

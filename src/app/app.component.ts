@@ -212,8 +212,13 @@ export class AppComponent {
     })
   }
 
-  updateSignalValue() {
-    this.counter.set(25);
+  updateSignalValue(operation:string) {
+    if (operation == '+') {
+      this.counter.set(this.counter() + 1);
+    }
+    if (operation == '-') {
+      this.counter.set(this.counter() - 1);
+    }
   }
   updatePropertyValue() {
     this.x = 30;

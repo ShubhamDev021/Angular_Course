@@ -166,3 +166,11 @@ Style Option - component.ts style
 
 <button (click)="updateSignalValue()">Change signal value</button>
 <button (click)="updatePropertyValue()">Change property value</button> -->
+
+<h1>Signal Counter App in angular</h1>
+
+<div class="signal-outer-wrapper">
+  <button class="signal-btn" (click)="updateSignalValue('+')">+</button>
+  <div class="signal-display">{{counter()}}</div>
+  <button class="signal-btn" (click)="updateSignalValue('-')">-</button>
+</div>
