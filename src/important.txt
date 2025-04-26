@@ -112,4 +112,11 @@ How signal value is accessed?
 Syntax: variable_name()
 Ex: counter()
 
+How to change value of signal?
+We can directly change value of signal in click event in template file
+
+Types of signals
+(a). Writable signal - here value gets changed
+(b). Computable signal - here value doesn't gets changed, they are readonly
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
