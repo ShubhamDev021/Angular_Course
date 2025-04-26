@@ -118,8 +118,27 @@ We can directly change value of signal in click event in template file
 Receiving signals whenever signal variable value gets changed
 here whenever signal variable valuse gets changed then effect() function in constructor is calling but whenever property value gets changed then effect() function in constructor is not calling 
 
+Defining data type of value of a signal
+Syntax: variable_name = signal<datatype1 | datatype2>(value);
+Ex: data = signal<number | string>(10);
+
 Types of signals
 (a). Writable signal - here value gets changed
+    data = signal<number | string>(10);
+    or
+    data2: WritableSignal<number | string> = signal(10);
+    this.data2.set(15); //no error
+    this.data2.set("hello"); //no error
+
 (b). Computable signal - here value doesn't gets changed, they are readonly
+    data3:Signal<number> = computed(() => 200);
+    this.data3.set(15); //error: Property 'set' does not exist on type 'Signal<number>' as this is a computable signal i.e. readonly signal
+
+How to update value of a signal?
+(a). Using set method
+    this.data.set(15);
+(b). Using update method
+    this.data.update((val) => val + 1)
+    If we have multiple datatypes in a signal then, this has limited use so, set() method is recommended
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
