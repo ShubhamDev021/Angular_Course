@@ -1,4 +1,4 @@
-import { Component, effect, signal, WritableSignal } from '@angular/core';
+import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -226,6 +226,7 @@ export class AppComponent {
 
   data = signal<number | string>(10);
   data2: WritableSignal<number | string> = signal(10);
+  data3:Signal<number> = computed(() => 200);
 
   updateSignal() {
     console.log('data before:', this.data());
@@ -241,6 +242,10 @@ export class AppComponent {
     console.log('data2 after:', this.data2());
     this.data2.set("hello");
     console.log('data2 after2:', this.data2());
+
+    console.log('data3 before:', this.data3());
+    // this.data3.set(15); //error: Property 'set' does not exist on type 'Signal<number>' as this is a computable signal i.e. readonly signal
+    console.log('data3 after:', this.data3());
   }
   
   //--------------------------------------
