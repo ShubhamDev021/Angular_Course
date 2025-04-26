@@ -115,6 +115,9 @@ Ex: counter()
 How to change value of signal?
 We can directly change value of signal in click event in template file
 
+Receiving signals whenever signal variable value gets changed
+here whenever signal variable valuse gets changed then effect() function in constructor is calling but whenever property value gets changed then effect() function in constructor is not calling 
+
 Types of signals
 (a). Writable signal - here value gets changed
 (b). Computable signal - here value doesn't gets changed, they are readonly

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -201,6 +201,23 @@ export class AppComponent {
   //--------------------------------------
   counter = signal(10);
   x = 20;
+
+  constructor() {
+    effect(() => {
+      // here whenever signal variable valuse gets changed then the below lines are executing i.e. effect() function is calling 
+      // but whenever property value gets changed then the below lines are not executing i.e. effect() function is not calling 
+
+      console.log("Updated signal value", this.counter());
+      console.log("Updated property value", this.x);
+    })
+  }
+
+  updateSignalValue() {
+    this.counter.set(25);
+  }
+  updatePropertyValue() {
+    this.x = 30;
+  }
   //--------------------------------------
   // signal code starts
   //--------------------------------------
