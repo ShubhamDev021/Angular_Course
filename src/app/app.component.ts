@@ -1,4 +1,4 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, effect, signal, WritableSignal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -225,7 +225,8 @@ export class AppComponent {
   }
 
   data = signal<number | string>(10);
-  
+  data2: WritableSignal<number | string> = signal(10);
+
   updateSignal() {
     console.log('data before:', this.data());
     this.data.set(15);  //no error
@@ -234,6 +235,12 @@ export class AppComponent {
     //Therefore, we have to define string datatype also for signal value i.e. data = signal<number | string>(10);
     this.data.set("hello");
     console.log('data after2:', this.data());
+
+    console.log('data2 before:', this.data2());
+    this.data2.set(15);
+    console.log('data2 after:', this.data2());
+    this.data2.set("hello");
+    console.log('data2 after2:', this.data2());
   }
   
   //--------------------------------------
