@@ -145,3 +145,12 @@ Can we update value of computed signals?
 Yes, we can update its value not directly as seen earlier but we can update its value by creating dependency on other signal
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Effect in angular
+
+What is effect in angular
+Get a updated signal in effect
+Example of effect uses
+Toggle elements
+use setTimeout
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
