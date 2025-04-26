@@ -99,3 +99,17 @@ What is event?
 Whenever any action is done on UI is known as event
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is signals?
+Signal is a wrapper around a value
+It gives signal when the values gets changed
+It can have any datatype value
+
+How signal is defined?
+Syntax: variable_name = signal(value);
+Ex: counter = signal(10);
+
+How signal value is accessed?
+Syntax: variable_name()
+Ex: counter()
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

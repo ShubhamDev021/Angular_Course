@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -194,5 +194,14 @@ export class AppComponent {
   ]
   //--------------------------------------
   // for loop code starts
+  //--------------------------------------
+
+  //--------------------------------------
+  // signal code starts
+  //--------------------------------------
+  counter = signal(10);
+  x = 20;
+  //--------------------------------------
+  // signal code starts
   //--------------------------------------
 }
