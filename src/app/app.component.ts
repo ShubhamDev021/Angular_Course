@@ -287,4 +287,24 @@ export class AppComponent {
   //-------------------------------------------
   // two way binding code without ngModel ends
   //-------------------------------------------
+
+  //-------------------------------------------
+  // To-do App in angular code starts
+  //-------------------------------------------
+  task:string = ""
+  taskList:{id:number, task:string}[] = []
+
+  createTask() {
+    this.taskList.push({id:this.taskList.length + 1, task:this.task})
+    this.task = ""
+  }
+
+  deleteTask(task_id: number) {
+    if(confirm('Are you sure, you want to delete this task?')) {
+      this.taskList = this.taskList.filter((tasks) => tasks.id != task_id)
+    }
+  }
+  //-------------------------------------------
+  // To-do App in angular code ends
+  //-------------------------------------------
 }

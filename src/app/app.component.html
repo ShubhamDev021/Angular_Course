@@ -192,3 +192,25 @@ Style Option - component.ts style
 <h1>Two way binding without using ngModel in angular</h1>
 <input type="text" name="student_name_2" id="student_name_2" placeholder="Enter the student name 2" (input)="updateStudentName($event)">
 <h2>{{student_name_2}}</h2> -->
+
+<h1>To-do App in angular</h1>
+
+<div>
+  <input class="todo-input-wrapper" type="text" name="task" id="task" placeholder="Enter the task" [(ngModel)]="task">
+  <button class="todo-btn todo-create-btn" (click)="createTask()">Create Task</button>
+
+  @if(taskList.length != 0) {
+    <ul class="todo-ul-wrapper todo-list-header">
+      <li>Task ID</li>
+      <li>Task Title</li>
+      <li>Action</li>
+    </ul>
+  }
+  @for(item of taskList; track item.id) {
+    <ul class="todo-ul-wrapper">
+      <li>{{item.id}}</li>
+      <li>{{item.task}}</li>
+      <li><button class="todo-btn todo-delete-btn" (click)="deleteTask(item.id)">Delete</button></li>
+    </ul>
+  }
+</div>

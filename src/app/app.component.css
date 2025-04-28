@@ -70,3 +70,38 @@ h3 {
     border: 1px solid grey;
     color: black;
 }
+
+.todo-input-wrapper {
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 30px;
+}
+.todo-ul-wrapper {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 70%;
+    margin: 2% 15%;
+    font-size: 18px;
+}
+.todo-list-header {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+.todo-btn {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.todo-btn:hover {
+    border-color: gray;
+}
+.todo-create-btn {
+    background-color: blueviolet;
+}
+.todo-delete-btn {
+    background-color: red;
+}
