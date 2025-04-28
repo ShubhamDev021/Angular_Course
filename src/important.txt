@@ -154,3 +154,11 @@ Toggle elements
 use setTimeout
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Two way binding in angular
+
+When we make change in componet's ts file and then it's been reflecting directly in component's template file and vice-versa, tgis process is known as two way binding
+
+Process:
+Import FormsModule in .ts file and then use banana in a box operator in .html file to bind with component's property
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

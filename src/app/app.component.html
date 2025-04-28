@@ -182,3 +182,8 @@ Style Option - component.ts style
 @for(user of users_new; track user) {
   <h3>{{user}}</h3>
 } -->
+
+<h1>Two way binding in angular</h1>
+
+<input type="text" name="student_name" id="student_name" placeholder="Enter the student name" [(ngModel)]="student_name">
+<h2>{{student_name}}</h2>

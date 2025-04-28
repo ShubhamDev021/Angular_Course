@@ -2,10 +2,11 @@ import { Component, computed, effect, Signal, signal, WritableSignal } from '@an
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, ProfileComponent],
+  imports: [RouterOutlet, LoginComponent, ProfileComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   styles: '.component-ts-span-class {font-size: 18px; color: white; background-color: blue;}'
@@ -265,5 +266,13 @@ export class AppComponent {
   users_new = ["shubham", "ayush", "akansha", "avika"];
   //-------------------------------------------
   // for loop contextual variables code ends
+  //-------------------------------------------
+
+  //-------------------------------------------
+  // two way binding code starts
+  //-------------------------------------------
+  student_name = ""
+  //-------------------------------------------
+  // two way binding code ends
   //-------------------------------------------
 }
