@@ -218,4 +218,8 @@ Style Option - component.ts style
 
 <h1>ngIf directive in angular</h1>
 
-<h1 *ngIf="is_monday">Today is monday</h1>
+<h1 *ngIf="is_monday else elseBlock">Today is monday</h1>
+
+<ng-template #elseBlock>
+  <h1>Today is not monday</h1>
+</ng-template>
