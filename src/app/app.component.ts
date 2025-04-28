@@ -275,4 +275,16 @@ export class AppComponent {
   //-------------------------------------------
   // two way binding code ends
   //-------------------------------------------
+
+  //-------------------------------------------
+  // two way binding code without ngModel starts
+  //-------------------------------------------
+  student_name_2 = ""
+
+  updateStudentName(event:Event) {
+    this.student_name_2 = (event.target as HTMLInputElement).value;
+  }
+  //-------------------------------------------
+  // two way binding code without ngModel ends
+  //-------------------------------------------
 }

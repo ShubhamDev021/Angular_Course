@@ -162,3 +162,9 @@ Process:
 Import FormsModule in .ts file and then use banana in a box operator in .html file to bind with component's property
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Two way binding without using ngModel in angular
+
+This process is slightly lengthy therefore, not recommended to use
+Here, we will perform update property operation when input event occurs
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

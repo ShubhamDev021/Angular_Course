@@ -187,3 +187,8 @@ Style Option - component.ts style
 
 <input type="text" name="student_name" id="student_name" placeholder="Enter the student name" [(ngModel)]="student_name">
 <h2>{{student_name}}</h2>
+
+
+<h1>Two way binding without using ngModel in angular</h1>
+<input type="text" name="student_name_2" id="student_name_2" placeholder="Enter the student name 2" (input)="updateStudentName($event)">
+<h2>{{student_name_2}}</h2>
