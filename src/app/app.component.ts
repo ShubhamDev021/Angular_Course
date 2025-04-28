@@ -6,10 +6,11 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, ProfileComponent, FormsModule],
+  imports: [RouterOutlet, LoginComponent, ProfileComponent, FormsModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   styles: '.component-ts-span-class {font-size: 18px; color: white; background-color: blue;}'
@@ -313,5 +314,13 @@ export class AppComponent {
   }
   //-------------------------------------------
   // To-do App in angular code ends
+  //-------------------------------------------
+
+  //-------------------------------------------
+  // ngIf directive in angular code starts
+  //-------------------------------------------
+  is_monday:boolean = true
+  //-------------------------------------------
+  // ngIf directive in angular code ends
   //-------------------------------------------
 }
