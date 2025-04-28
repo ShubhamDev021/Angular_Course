@@ -258,4 +258,12 @@ export class AppComponent {
   //--------------------------------------
   // signal code starts
   //--------------------------------------
+
+  //-------------------------------------------
+  // for loop contextual variables code starts
+  //-------------------------------------------
+  users_new = ["shubham", "ayush", "akansha", "avika"];
+  //-------------------------------------------
+  // for loop contextual variables code ends
+  //-------------------------------------------
 }
