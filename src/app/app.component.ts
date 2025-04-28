@@ -1,3 +1,6 @@
+declare var toastr: any;
+declare var $: any;
+
 import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
@@ -297,11 +300,15 @@ export class AppComponent {
   createTask() {
     this.taskList.push({id:this.taskList.length + 1, task:this.task})
     this.task = ""
+    toastr.success('Task created successfully!!!');
   }
 
   deleteTask(task_id: number) {
     if(confirm('Are you sure, you want to delete this task?')) {
       this.taskList = this.taskList.filter((tasks) => tasks.id != task_id)
+      toastr.success('Task deleted successfully!!!');
+    } else {
+      toastr.error('Task deletion aborted!!!');
     }
   }
   //-------------------------------------------

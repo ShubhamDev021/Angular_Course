@@ -27,9 +27,13 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/toastr.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/jquery.min.js",
+              "src/toastr.min.js"
+            ]
           },
           "configurations": {
             "production": {
