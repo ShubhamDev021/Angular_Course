@@ -323,4 +323,12 @@ export class AppComponent {
   //-------------------------------------------
   // ngIf directive in angular code ends
   //-------------------------------------------
+
+  //-------------------------------------------
+  // ngFor directive in angular code starts
+  //-------------------------------------------
+  users_2 = ["Shubham", "Ayush", "Akansha","Avika"]
+  //-------------------------------------------
+  // ngFor directive in angular code ends
+  //-------------------------------------------
 }
